@@ -22,20 +22,19 @@
             box-sizing: border-box;
         }
 
-
         .image-item img {
             max-height: 90px; /* Set the maximum height of the images */
             width: auto;
             height: auto;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             .image-item {
                 flex: 0 0 calc(50% - 20px); /* Two items in a row for medium-sized screens */
             }
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 768px) {
             .image-item {
                 flex: 0 0 calc(100% - 20px); /* One item in a row for small screens */
             }
