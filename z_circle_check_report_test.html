@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .image-item {
+            flex: 0 0 calc(33.33% - 20px); /* Three items in a row, with some spacing */
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .image-item {
+                flex: 0 0 calc(50% - 20px); /* Two items in a row for medium-sized screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .image-item {
+                flex: 0 0 calc(100% - 20px); /* One item in a row for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <div class="image-item"><img src="image1.png" alt="Image 1"></div>
+        <div class="image-item"><img src="image2.png" alt="Image 2"></div>
+        <div class="image-item"><img src="image3.png" alt="Image 3"></div>
+        <div class="image-item"><img src="image4.png" alt="Image 4"></div>
+        <div class="image-item"><img src="image5.png" alt="Image 5"></div>
+        <div class="image-item"><img src="image6.png" alt="Image 6"></div>
+    </div>
+</body>
+</html>
