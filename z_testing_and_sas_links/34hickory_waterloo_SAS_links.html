@@ -178,6 +178,51 @@ height: 38px;
 } */
 
 
+        <!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .image-item {
+            flex: 0 0 calc(33.33% - 20px); /* Three items in a row, with some spacing */
+            margin: 10px;
+            box-sizing: border-box;
+        }
+
+        .image-item img {
+            max-height: 90px; /* Set the maximum height of the images */
+            width: auto;
+            height: auto;
+        }
+
+        @media (max-width: 1200px) {
+            .image-item {
+                flex: 0 0 calc(50% - 20px); /* Two items in a row for medium-sized screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .image-item {
+                flex: 0 0 calc(100% - 20px); /* One item in a row for small screens */
+            }
+        }
+
+
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+
+
+
+
+
+
     </style>
 </head>
 
@@ -195,7 +240,8 @@ height: 38px;
             <h1 id="top_text"> 34 Hickory St </h1>
 
             <a class="memorandum_application">
-                <img src="./34_hickory/app_qr_34_hickory.png" alt="QR Sharing app" style="height: 60px;">
+                <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/app_qr_34_hickory.png?sp=r&st=2024-01-26T14:42:10Z&se=2030-01-26T22:42:10Z&spr=https&sv=2022-11-02&sr=b&sig=sGoR00ybBoW6BQ%2BPf2GI5kDyHKX4BEMWQBBzQk9CmoA%3D
+" alt="QR Sharing app" style="height: 60px;">
             </a>
     </div>
     
@@ -291,7 +337,27 @@ height: 38px;
     </div>
 
 
-  
+      <div class="image-container">
+
+                        <div class="image-item"><img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_backhoe_loader.png?sp=r&st=2024-01-23T20:11:03Z&se=2024-01-31T04:11:03Z&spr=https&sv=2022-11-02&sr=b&sig=yjtgak0H95VA6ol8u71SNUa%2Fljwix4f1q1aM3YNJfxo%3D
+                " alt="machinery_backhoe_loader"></div>
+
+                        <div class="image-item"><img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_buldozer.png?sp=r&st=2024-01-24T20:12:09Z&se=2024-01-31T04:12:09Z&spr=https&sv=2022-11-02&sr=b&sig=LpDJc5AXGtJdLPMLj1tZDAutsXWq%2FkesvOxkv6VQuMw%3D
+                " alt="machinery_buldozer"></div>
+
+                        <div class="image-item"><img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_excavator.png?sp=r&st=2024-01-24T20:12:31Z&se=2024-01-31T04:12:31Z&spr=https&sv=2022-11-02&sr=b&sig=ie0u2oyVB%2BzWvEFGGCUWNb74F8xh6fvH8CY%2BEhaUlwo%3D
+                " alt="machinery_excavator"></div>
+
+                        <div class="image-item"><img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_forklift_zoom_boom.png?sp=r&st=2024-01-24T20:12:55Z&se=2024-01-31T04:12:55Z&spr=https&sv=2022-11-02&sr=b&sig=2Ns4LjW8ntCxvSSwSDFYWs7UfZPmdDcQ3Pp3mI9LjMw%3D
+                " alt="machinery_forklift_zoom_boom"></div>
+
+                        <div class="image-item"><img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_mini_excavator.png?sp=r&st=2024-01-24T20:13:18Z&se=2024-01-31T04:13:18Z&spr=https&sv=2022-11-02&sr=b&sig=QcE5EAWUDxVFdB2TvVu9mJjKZ4DmaSsSwTB7EsN3UzQ%3D
+                " alt="machinery_mini_excavator"></div>
+
+                        <div class="image-item"><img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_skid_steer.png?sp=r&st=2024-01-26T14:12:08Z&se=2030-01-26T22:12:08Z&spr=https&sv=2022-11-02&sr=b&sig=ZOH7gJ0vd%2B5UtgNfM7ULxRe5zC%2FTyhgGAABbOAo26Dk%3D
+                " alt="machinery_skid_steer"></div>
+
+    </div>
 
 
   
