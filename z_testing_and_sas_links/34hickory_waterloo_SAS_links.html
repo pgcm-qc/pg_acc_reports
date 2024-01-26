@@ -200,8 +200,7 @@ height: 38px;
         flex-wrap: wrap;
         justify-content: space-around;
 <!--        background-color: rgb(224, 224, 224); /* Gray background color */-->
-        background-color: #2c2c2c; /* Darker gray color */
-        padding: 10px; /* Add padding for spacing */
+        padding: 100px; /* Add padding for spacing */
         }
 
         .image-item {
@@ -211,6 +210,9 @@ height: 38px;
         background-color: rgb(224, 224, 224); /* Background color for the image holder */
         border-radius: 20px; /* Add rounded corners */
         overflow: hidden; /* Hide overflow content */
+        margin-bottom: 0px;
+        position: relative;
+        text-align: center;
         }
 
         .image-item img {
@@ -218,7 +220,7 @@ height: 38px;
         width: auto;
         height: auto;
         display: block; /* Remove extra space beneath the image */
-        margin: 0 auto; /* Center the image horizontally */
+        margin: auto; /* Center the image horizontally */
         }
 
         @media (max-width: 200px) {
@@ -233,10 +235,34 @@ height: 38px;
             }
         }
 
-
     .image-item:hover {
       filter: brightness(1.2); /* Adjust brightness on hover to highlight */
+
+    .image-item a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-decoration: none;
+      z-index: 1;
     }
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    z-index: 2; /* Set a lower z-index to keep the text below the image */
+}
+
+
 
 <!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
 <!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
@@ -281,7 +307,6 @@ height: 38px;
         </a>
     </div>
 
-
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZGE5YTA3YTgtNjg3MC00ZWE1LWFmY2MtNzM3YmY0MjI1ODg2IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
             <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_forms_icon.png?sp=r&st=2024-01-15T17:31:07Z&se=2030-01-17T01:31:07Z&spr=https&sv=2022-11-02&sr=b&sig=SRoKoQe48WR57wesma%2FtmCSLXEpD%2FkYeahmoYOsSipM%3D
@@ -289,7 +314,6 @@ height: 38px;
             <h1 class="module_index">Health & Safety Reports</h1>
         </a>
     </div>
-
 
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiMmIyZTU1NDYtODFhZS00OWM5LWE4NzMtNjhjOTVlN2Y2YjY3IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
@@ -299,7 +323,6 @@ height: 38px;
         </a>
     </div>
 
-
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZjM4YjFmNmQtMjAzOS00YzYzLWE2ZjQtODE1NmViMDYzYTI0IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
             <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_rfi_icon.png?sp=r&st=2024-01-15T17:32:53Z&se=2030-01-17T01:32:53Z&spr=https&sv=2022-11-02&sr=b&sig=7Q4rqY5Ph8KN%2FnbCECK0jkZmPHE4aiwAT8oGi6d5dx8%3D
@@ -307,7 +330,6 @@ height: 38px;
             <h1 class="module_index">RFIs</h1>
         </a>
     </div>
-
 
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiNGIxM2EyMjAtYTZhYy00MzY2LTk1MzYtOGEzNGIwOWJjNTE1IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
@@ -317,7 +339,6 @@ height: 38px;
         </a>
     </div>
 
-
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiNzRkOTBhMzUtZmI1MS00NjQ2LTg5YjgtYzM2ZjY4MWFmMmUzIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
             <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_forms_icon.png?sp=r&st=2024-01-15T17:31:07Z&se=2030-01-17T01:31:07Z&spr=https&sv=2022-11-02&sr=b&sig=SRoKoQe48WR57wesma%2FtmCSLXEpD%2FkYeahmoYOsSipM%3D
@@ -325,7 +346,6 @@ height: 38px;
             <h1 class="module_index">QC Inspections</h1>
         </a>
     </div>
-
 
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZDA0ZGU3YjAtMGNhZS00NmQ1LTkyZjYtMmY1YmUxODI1OTQ2IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
@@ -335,7 +355,6 @@ height: 38px;
         </a>
     </div>
 
-
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiYTRkZDI3YjktMjQyZi00YzY5LWExMjAtNWU0NGNlN2EyMWExIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
             <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_forms_icon.png?sp=r&st=2024-01-15T17:31:07Z&se=2030-01-17T01:31:07Z&spr=https&sv=2022-11-02&sr=b&sig=SRoKoQe48WR57wesma%2FtmCSLXEpD%2FkYeahmoYOsSipM%3D
@@ -343,7 +362,6 @@ height: 38px;
             <h1 class="module_index">PDI Report</h1>
         </a>
     </div>
-
 
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZDkxZDczODAtMTExNi00ZTZkLWI4N2YtMmQwNDcyMzBkOTBiIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
@@ -354,40 +372,38 @@ height: 38px;
     </div>
 
 
-      <div class="image-container">
+<div class="image-container">
 
-                        <div class="image-item">
-                            <a href="https://www.google.ca/maps" target="_blank">
-                            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_backhoe_loader.png?sp=r&st=2024-01-23T20:11:03Z&se=2024-01-31T04:11:03Z&spr=https&sv=2022-11-02&sr=b&sig=yjtgak0H95VA6ol8u71SNUa%2Fljwix4f1q1aM3YNJfxo%3D
-                " alt="machinery_backhoe_loader"></a></div>
+<div class="image-item">
+    <a href="https://www.google.ca/maps" target="_blank">
+        <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_backhoe_loader.png?sp=r&st=2024-01-23T20:11:03Z&se=2024-01-31T04:11:03Z&spr=https&sv=2022-11-02&sr=b&sig=yjtgak0H95VA6ol8u71SNUa%2Fljwix4f1q1aM3YNJfxo%3D" alt="machinery_backhoe_loader">
+    </a>
+</div>
 
-                        <div class="image-item">
-                            <a href="https://www.google.ca/maps" target="_blank">
-                            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_buldozer.png?sp=r&st=2024-01-24T20:12:09Z&se=2024-01-31T04:12:09Z&spr=https&sv=2022-11-02&sr=b&sig=LpDJc5AXGtJdLPMLj1tZDAutsXWq%2FkesvOxkv6VQuMw%3D
-                " alt="machinery_buldozer"></a></div>
+<div class="image-item">
+<a href="https://www.google.ca/maps" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_buldozer.png?sp=r&st=2024-01-24T20:12:09Z&se=2024-01-31T04:12:09Z&spr=https&sv=2022-11-02&sr=b&sig=LpDJc5AXGtJdLPMLj1tZDAutsXWq%2FkesvOxkv6VQuMw%3D
+" alt="machinery_buldozer"></a></div>
 
-                        <div class="image-item">
-                            <a href="https://www.google.ca/maps" target="_blank">
-                            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_excavator.png?sp=r&st=2024-01-24T20:12:31Z&se=2024-01-31T04:12:31Z&spr=https&sv=2022-11-02&sr=b&sig=ie0u2oyVB%2BzWvEFGGCUWNb74F8xh6fvH8CY%2BEhaUlwo%3D
-                " alt="machinery_excavator"></a></div>
+<div class="image-item">
+<a href="https://www.google.ca/maps" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_excavator.png?sp=r&st=2024-01-24T20:12:31Z&se=2024-01-31T04:12:31Z&spr=https&sv=2022-11-02&sr=b&sig=ie0u2oyVB%2BzWvEFGGCUWNb74F8xh6fvH8CY%2BEhaUlwo%3D
+" alt="machinery_excavator"></a></div>
 
-                        <div class="image-item">
-                            <a href="https://www.google.ca/maps" target="_blank">
-                            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_forklift_zoom_boom.png?sp=r&st=2024-01-24T20:12:55Z&se=2024-01-31T04:12:55Z&spr=https&sv=2022-11-02&sr=b&sig=2Ns4LjW8ntCxvSSwSDFYWs7UfZPmdDcQ3Pp3mI9LjMw%3D
-                " alt="machinery_forklift_zoom_boom"></a></div>
+<div class="image-item">
+<a href="https://www.google.ca/maps" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_forklift_zoom_boom.png?sp=r&st=2024-01-24T20:12:55Z&se=2024-01-31T04:12:55Z&spr=https&sv=2022-11-02&sr=b&sig=2Ns4LjW8ntCxvSSwSDFYWs7UfZPmdDcQ3Pp3mI9LjMw%3D
+" alt="machinery_forklift_zoom_boom"></a></div>
 
-                        <div class="image-item">
-                            <a href="https://www.google.ca/maps" target="_blank">
-                            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_mini_excavator.png?sp=r&st=2024-01-24T20:13:18Z&se=2024-01-31T04:13:18Z&spr=https&sv=2022-11-02&sr=b&sig=QcE5EAWUDxVFdB2TvVu9mJjKZ4DmaSsSwTB7EsN3UzQ%3D
-                " alt="machinery_mini_excavator"></a></div>
+<div class="image-item">
+<a href="https://www.google.ca/maps" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_mini_excavator.png?sp=r&st=2024-01-24T20:13:18Z&se=2024-01-31T04:13:18Z&spr=https&sv=2022-11-02&sr=b&sig=QcE5EAWUDxVFdB2TvVu9mJjKZ4DmaSsSwTB7EsN3UzQ%3D
+" alt="machinery_mini_excavator"></a></div>
 
-                        <div class="image-item">
-                            <a href="https://www.google.ca/maps" target="_blank">
-                            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_skid_steer.png?sp=r&st=2024-01-26T14:12:08Z&se=2030-01-26T22:12:08Z&spr=https&sv=2022-11-02&sr=b&sig=ZOH7gJ0vd%2B5UtgNfM7ULxRe5zC%2FTyhgGAABbOAo26Dk%3D
-                " alt="machinery_skid_steer"></a></div>
-
-    </div>
-
+<div class="image-item">
+<a href="https://www.google.ca/maps" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_skid_steer.png?sp=r&st=2024-01-26T14:12:08Z&se=2030-01-26T22:12:08Z&spr=https&sv=2022-11-02&sr=b&sig=ZOH7gJ0vd%2B5UtgNfM7ULxRe5zC%2FTyhgGAABbOAo26Dk%3D
+" alt="machinery_skid_steer"></a></div>
 
 <div>
     <p class="bottom-text">Prica Group Construction Management Inc</p>
