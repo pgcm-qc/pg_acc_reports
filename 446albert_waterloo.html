@@ -177,6 +177,91 @@ height: 38px;
     height: 35px;
 } */
 
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+<!--        background-color: rgb(224, 224, 224); /* Gray background color */-->
+        padding: 100px; /* Add padding for spacing */
+        }
+
+        .image-item {
+        flex: 0 0 calc(16.666% - 20px); /* Adjust the width and spacing as needed */
+        margin: 10px;
+        box-sizing: border-box;
+        background-color: rgb(224, 224, 224); /* Background color for the image holder */
+        border-radius: 20px; /* Add rounded corners */
+        overflow: hidden; /* Hide overflow content */
+        margin-bottom: 0px;
+        position: relative;
+        text-align: center;
+        }
+
+        .image-item img {
+        max-height: 70px;
+        width: auto;
+        height: auto;
+        display: block; /* Remove extra space beneath the image */
+        margin: auto; /* Center the image horizontally */
+        }
+
+        @media (max-width: 200px) {
+            .image-item {
+                flex: 0 0 calc(75% - 20px); /* Two items in a row for medium-sized screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .image-item {
+                flex: 0 0 calc(33.33% - 20px); /* One item in a row for small screens */
+            }
+        }
+
+    .image-item:hover {
+      filter: brightness(1.2); /* Adjust brightness on hover to highlight */
+
+    .image-item a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-decoration: none;
+      z-index: 1;
+    }
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    z-index: 2; /* Set a lower z-index to keep the text below the image */
+}
+
+
+
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+
 
     </style>
 </head>
@@ -192,10 +277,6 @@ height: 38px;
             <img src="./fonts_and_common_media/app_pgcm_logo.png" alt="PGCM Logo">
         </a>
 <h1 id="top_text"> 446 Albert St </h1>
-        <!-- <a 
-            class="memorandum_application">
-            <img src="app_pge_logo.png" alt="Power BI Button">
-        </a> -->
 
     <a 
     class="memorandum_application">
@@ -204,17 +285,10 @@ height: 38px;
     </div>
     
     <div class="main_header"><img id="imageid" src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/446_albert_street_waterloo.png?sp=r&st=2024-01-15T17:28:46Z&se=2030-01-17T01:28:46Z&spr=https&sv=2022-11-02&sr=b&sig=u%2BOrjNd8fLLK8ldHhFNconPKxqCQJCRMNgBLWCb5fKM%3D" alt="446 Albert Street, Waterloo, Ontario"></div>
-    <!-- <div class="main_header"><img id="imageid" src="34_hickory_street_waterloo.png" alt="34 Hickory Street, Waterloo, Ontario"></div>
-    <div class="main_header"><img id="imageid" src="./333_albert/34_hickory_street_waterloo.png" alt="34 Hickory Street, Waterloo, Ontario"></div>
-    <div class="main_header"><img id="imageid" src="./333_albert/albert333.png" alt="333 Albert Street, Waterloo, Ontario"></div> -->
     <div class="header2"><h1 class="main_text"></h1></div>
 
 <!-- ############################### -->
-
- 
 <!-- ############################### -->
-
-
 
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiMmNiNmEyMjQtN2U0ZS00Yjk3LWFmNjQtNzkzNjU2YmEzMmM5IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
@@ -222,7 +296,6 @@ height: 38px;
             <h1 class="module_index">Daily Reports</h1>
         </a>
     </div>
-
     
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiODA2YjExYjktOGQzYy00MjNlLThjMjYtODk5MDM1ZTM2MjBjIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
@@ -231,14 +304,12 @@ height: 38px;
         </a>
     </div>
 
-
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiODA0M2NhMGEtZTE5My00MDM5LWI5MmEtZGUzNzY1ZjkxZTIyIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
             <img src="./34_hickory/acc_issues_icon.png" alt="Issues Button" height="60" >
             <h1 class="module_index">Issues</h1>
         </a>
     </div>
-
 
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiMjA0MzhlN2ItZWU3My00ZjgwLTg0NmItODZjMWU3MDVhOTQzIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
@@ -247,39 +318,6 @@ height: 38px;
         </a>
     </div>
 
-
-<!--    <div class="report_buttons">-->
-<!--        <a href="https://app.powerbi.com/view?r=eyJrIjoiNGIxM2EyMjAtYTZhYy00MzY2LTk1MzYtOGEzNGIwOWJjNTE1IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">-->
-<!--            <img src="./34_hickory/acc_submittals_icon.png" alt="Submittals Button" height="60" >-->
-<!--            <h1 class="module_index">Submittals</h1>-->
-<!--        </a>-->
-<!--    </div>-->
-
-
-<!--    <div class="report_buttons">-->
-<!--        <a href="https://app.powerbi.com/view?r=eyJrIjoiNzRkOTBhMzUtZmI1MS00NjQ2LTg5YjgtYzM2ZjY4MWFmMmUzIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">-->
-<!--            <img src="./34_hickory/acc_forms_icon.png" alt="Forms Button" height="60" >-->
-<!--            <h1 class="module_index">QC Inspections</h1>-->
-<!--        </a>-->
-<!--    </div>-->
-
-
-<!--    <div class="report_buttons">-->
-<!--        <a href="https://app.powerbi.com/view?r=eyJrIjoiZDA0ZGU3YjAtMGNhZS00NmQ1LTkyZjYtMmY1YmUxODI1OTQ2IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">-->
-<!--            <img src="./34_hickory/acc_forms_icon.png" alt="Forms Button" height="60" >-->
-<!--            <h1 class="module_index">Subcontractor Sign Off Forms</h1>-->
-<!--        </a>-->
-<!--    </div>-->
-
-
-<!--    <div class="report_buttons">-->
-<!--        <a href="https://app.powerbi.com/view?r=eyJrIjoiYTRkZDI3YjktMjQyZi00YzY5LWExMjAtNWU0NGNlN2EyMWExIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">-->
-<!--            <img src="./34_hickory/acc_forms_icon.png" alt="Forms Button" height="60" >-->
-<!--            <h1 class="module_index">PDI Report</h1>-->
-<!--        </a>-->
-<!--    </div>-->
-
-
     <div class="report_buttons">
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZDkxZDczODAtMTExNi00ZTZkLWI4N2YtMmQwNDcyMzBkOTBiIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
             <img src="./34_hickory/acc_reviews_icon.png" alt="Reviews Button" height="60" >
@@ -287,18 +325,43 @@ height: 38px;
         </a>
     </div>
 
+<!--################################################-->
+<div class="image-container">
 
-  
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiMjdkY2I3ODctMWFiNy00ODQ5LWIwM2MtODg3YjA0NjU1NjdiIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_backhoe_loader.png?sp=r&st=2024-01-23T20:11:03Z&se=2024-01-31T04:11:03Z&spr=https&sv=2022-11-02&sr=b&sig=yjtgak0H95VA6ol8u71SNUa%2Fljwix4f1q1aM3YNJfxo%3D"
+ alt="machinery_backhoe_loader"></a></div>
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiNzE1YWE2NGQtNTc5Ny00YWFhLTk2NzQtY2M4ZGVkMzM0NjM5IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_buldozer.png?sp=r&st=2024-01-24T20:12:09Z&se=2024-01-31T04:12:09Z&spr=https&sv=2022-11-02&sr=b&sig=LpDJc5AXGtJdLPMLj1tZDAutsXWq%2FkesvOxkv6VQuMw%3D
+" alt="machinery_buldozer"></a></div>
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiMmYwMWE2ZWUtYWU5ZS00N2ZmLTkxMmItN2QxZWM0ZTFjMzY1IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_excavator.png?sp=r&st=2024-01-24T20:12:31Z&se=2024-01-31T04:12:31Z&spr=https&sv=2022-11-02&sr=b&sig=ie0u2oyVB%2BzWvEFGGCUWNb74F8xh6fvH8CY%2BEhaUlwo%3D
+" alt="machinery_excavator"></a></div>
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiZDliZmQxNWItNmM5My00ZDIyLTlmYjUtYTc2ZGQ2MGExZDg0IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_forklift_zoom_boom.png?sp=r&st=2024-01-24T20:12:55Z&se=2024-01-31T04:12:55Z&spr=https&sv=2022-11-02&sr=b&sig=2Ns4LjW8ntCxvSSwSDFYWs7UfZPmdDcQ3Pp3mI9LjMw%3D
+" alt="machinery_forklift_zoom_boom"></a></div>
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiYjNkNzc3ODUtMmZkMy00YmIwLTk5MDUtY2E4Y2IxNmY3NTgyIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_mini_excavator.png?sp=r&st=2024-01-24T20:13:18Z&se=2024-01-31T04:13:18Z&spr=https&sv=2022-11-02&sr=b&sig=QcE5EAWUDxVFdB2TvVu9mJjKZ4DmaSsSwTB7EsN3UzQ%3D
+" alt="machinery_mini_excavator"></a></div>
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiNjVkZDg0N2YtNjc3My00OGI1LTgyMDUtZjgxYTY3Y2ZkYjgwIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_skid_steer.png?sp=r&st=2024-01-26T14:12:08Z&se=2030-01-26T22:12:08Z&spr=https&sv=2022-11-02&sr=b&sig=ZOH7gJ0vd%2B5UtgNfM7ULxRe5zC%2FTyhgGAABbOAo26Dk%3D
+" alt="machinery_skid_steer"></a></div>
+
+</div>
+<!--################################################-->
 
 
-  
-
-    <!-- <div class="report_buttons">
-        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjY0OGVlMTMtYzhkNC00MThjLWI4MWYtMDViNGNkM2E5MjJmIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
-            <img src="./333_albert/acc_correspondence_icon.png" alt="Correspondence Button" height="80" >
-            <h1 class="module_index">C o r r e s p o n d e n c e</h1>
-        </a>
-    </div> -->
 
     <div class="header34"><h1 class="main_textt", id="the_bottom_text"> "*" </h1></div>
 
