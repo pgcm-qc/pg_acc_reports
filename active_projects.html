@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34 Hickory St - Reports</title>
+    <link rel="icon" href="./fonts_and_common_media/pg_globe_favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            position: relative;
+            height: 1vh;
+            margin: 0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rgb(148, 148, 148);
+        }
+
+        /* .upper-buttons, */
+        /* .lower-buttons {
+            display: flex;
+
+            justify-content: space-between;
+            padding: 1px;
+            background-color: rgb(255, 255, 255);
+        } */
+
+        .top_header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: rgb(197, 197, 197);
+        }
+
+        #top_text{font-size: 14px; font-family: './fonts_and_common_media/Artifakt Element Bold'; color: #949393;}
+
+        .memorandum_application img {
+            width: auto;  /* Maintain aspect ratio */
+            height: 45px; /* Set your desired height */
+        }
+
+    @font-face {
+    font-family: './fonts_and_common_media/Artifakt Element Regular';
+    src: url('./fonts_and_common_media/ArtifaktElement-Regular.woff2') format('woff2');
+    font-weight: lighter; /* or 'bold' if applicable */
+    font-style: normal; /* or 'italic' if applicable */
+    }
+
+
+    @font-face {
+    font-family: './fonts_and_common_media/Artifakt Element Bold';
+    src: url('./fonts_and_common_media/ArtifaktElement-Bold.woff2') format('woff2');
+    font-weight: bold; /* or 'bold' if applicable */
+    font-style: normal; /* or 'italic' if applicable */
+    }
+
+
+
+        .main_header {font-family: './fonts_and_common_media/Artifakt Element Bold', sans-serif; background-color: rgb(197, 197, 197); height: 180px;}
+
+        /* .header2{background-color: rgb(148, 148, 148); font-family: './fonts_and_common_media/Artifakt Element Regular', sans-serif; height: 20px; } */
+
+        /* .header3{background-color: rgb(148, 148, 148); font-family: './fonts_and_common_media/Artifakt Element Regular', sans-serif; height: 15px; } */
+
+
+        /* h1{font-size: 5px; color: rgb(224, 224, 224);text-align: center;} */
+
+        /* h2{font-size: 20px; color: rgb(0, 0, 0);text-align: left; font-weight: 900;} */
+
+
+        /* .main_text{font-family: './fonts_and_common_media/Artifakt Element Regular', sans-serif; font-weight: 100; font-size: 20px;} */
+
+        .main_header {
+    max-width: 100%; /* Set the maximum width of the container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set the container height to fill the viewport height */
+}
+
+.main_header img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Allow the image to maintain its aspect ratio */
+}
+
+/* #qr-image {
+    height: 60px;
+} */
+
+.report_buttons {
+    display: flex;
+    /* border: solid rgb(101, 102, 105); */
+    border-radius: 20px; /* Rounded corners */
+    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    padding: 0px 1px 0px 9px;
+    background-color: rgb(224, 224, 224);
+    margin: 3px; /* Adjust margin as needed */
+}
+
+.report_buttons a {
+    display: flex;
+    align-items: center; /* Center vertically */
+    text-decoration: none; /* Remove underline for the link */
+    width: 100%; /* Make the entire div clickable */
+}
+
+
+
+.report_buttons h1 {
+    /* font-family: './fonts_and_common_media/Artifakt Element Bold', sans-serif; */
+    /* font-weight: 900; */
+    /* font-size: 20px; */
+    /* color: rgb(136, 30, 30); */
+    margin-left: 35px;
+}
+
+.button-link {
+    /* display: inline-block;
+    padding: 0px 40px 5px 50px;
+    background-color: rgb(224, 224, 224); /* Button background color */
+    /* color: #613535; Text color */
+    /* text-decoration: none; Remove underline from the link */
+    /* border-radius: 10px; Rounded corners */
+    /* transition: background-color 0.3s ease; Smooth transition on hover */ */
+}
+
+.button-link:hover {
+    background-color: #ffffff; /* Change the background color on hover */
+}
+
+.report_buttons:hover {
+    background-color: #ffffff; /* Change the background color on hover */
+}
+
+.module_index{font-family: './fonts_and_common_media/Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 15px; color: rgb(0, 0, 0); text-decoration: none;}
+h1.module_index{font-family: './fonts_and_common_media/Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 17px; color: rgb(122, 121, 121); text-decoration: none;}
+h1.module_index_white{font-family: './fonts_and_common_media/Artifakt Element Bold', sans-serif; font-weight: 600; font-size: 17px; color: rgb(224, 224, 224); text-decoration: none;}
+
+
+
+/* ######################################## */
+
+.bottom-text {
+    position: bottom;
+    bottom: 0;
+    font-family: './fonts_and_common_media/Artifakt Element Regular', sans-serif;
+    font-weight: 100;
+    font-size: 9px;
+    text-decoration: none;
+    /* width: 100%; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgb(224, 224, 224);
+    position: fixed;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    /* padding: 1px; */
+}
+
+
+/* ############################ssSSSSS################ */
+
+#the_bottom_text{margin-top: 20px; color: rgb(148, 148, 148);}
+
+
+/* <div class="header34"><h1 class="main_text_b"> "*" </h1></div> */
+
+.report_buttons a img{
+height: 38px;
+}
+
+/* div.report_buttons a img {
+    height: 35px;
+} */
+
+    #imageid {
+      max-height: 200px; /* Set the maximum height to 300px */
+      width: auto; /* Maintain the aspect ratio of the image */
+      height: auto; /* Maintain the aspect ratio of the image */
+    }
+
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+<!--        background-color: rgb(224, 224, 224); /* Gray background color */-->
+        padding: 100px; /* Add padding for spacing */
+        }
+
+        .image-item {
+        flex: 0 0 calc(16.666% - 20px); /* Adjust the width and spacing as needed */
+        margin: 10px;
+        box-sizing: border-box;
+        background-color: rgb(224, 224, 224); /* Background color for the image holder */
+        border-radius: 20px; /* Add rounded corners */
+        overflow: hidden; /* Hide overflow content */
+        margin-bottom: 0px;
+        position: relative;
+        text-align: center;
+        }
+
+        .image-item img {
+        max-height: 70px;
+        width: auto;
+        height: auto;
+        display: block; /* Remove extra space beneath the image */
+        margin: auto; /* Center the image horizontally */
+        }
+
+        @media (max-width: 200px) {
+            .image-item {
+                flex: 0 0 calc(75% - 20px); /* Two items in a row for medium-sized screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .image-item {
+                flex: 0 0 calc(33.33% - 20px); /* One item in a row for small screens */
+            }
+        }
+
+    .image-item:hover {
+      filter: brightness(1.2); /* Adjust brightness on hover to highlight */
+
+    .image-item a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-decoration: none;
+      z-index: 1;
+    }
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    z-index: 2; /* Set a lower z-index to keep the text below the image */
+}
+
+
+
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+<!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
+
+
+
+    </style>
+</head>
+
+
+<!-- ########___################################################################################################################
+######################################################################################################################## -->
+
+<body>
+    <div class="top_header">
+            <a
+                    class="memorandum_application">
+                    <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/app_pgcm_logo.png?sp=r&st=2024-01-15T17:33:57Z&se=2030-01-17T01:33:57Z&spr=https&sv=2022-11-02&sr=b&sig=8wgfsaGmP7nC9GwhO4STh51MCPSCnmFfqz3WQpwNg00%3D
+                " alt="PGCM Logo">
+            </a>
+            <h1 id="top_text"> 34 Hickory St </h1>
+
+            <a class="memorandum_application">
+                <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/app_qr_34_hickory.png?sp=r&st=2024-01-26T14:42:10Z&se=2030-01-26T22:42:10Z&spr=https&sv=2022-11-02&sr=b&sig=sGoR00ybBoW6BQ%2BPf2GI5kDyHKX4BEMWQBBzQk9CmoA%3D
+" alt="QR Sharing app" style="height: 60px;">
+            </a>
+    </div>
+
+    <div class="main_header"><img id="imageid" src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/34_hickory_street_waterloo.png?sp=r&st=2024-01-15T17:27:27Z&se=2030-01-17T01:27:27Z&spr=https&sv=2022-11-02&sr=b&sig=gBCfbtvgGMDteC%2B3DwAPGupAxGFu92CNdYJFIei3204%3D
+" alt="34 Hickory Street, Waterloo, Ontario"></div>
+    <div class="header2"><h1 class="main_text"></h1></div>
+
+<!-- ############################### -->
+<!-- ############################### -->
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiMTI1OWQ4N2MtNTdmNi00NTQxLWJhZDctOGZmMDA4NjM5MjczIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_forms_icon.png?sp=r&st=2024-01-15T17:31:07Z&se=2030-01-17T01:31:07Z&spr=https&sv=2022-11-02&sr=b&sig=SRoKoQe48WR57wesma%2FtmCSLXEpD%2FkYeahmoYOsSipM%3D
+" alt="Forms Button" height="60" >
+            <h1 class="module_index">Daily Reports</h1>
+        </a>
+    </div>
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZGE5YTA3YTgtNjg3MC00ZWE1LWFmY2MtNzM3YmY0MjI1ODg2IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_forms_icon.png?sp=r&st=2024-01-15T17:31:07Z&se=2030-01-17T01:31:07Z&spr=https&sv=2022-11-02&sr=b&sig=SRoKoQe48WR57wesma%2FtmCSLXEpD%2FkYeahmoYOsSipM%3D
+" height="60" >
+            <h1 class="module_index">Health & Safety Reports</h1>
+        </a>
+    </div>
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiMmIyZTU1NDYtODFhZS00OWM5LWE4NzMtNjhjOTVlN2Y2YjY3IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_issues_icon.png?sp=r&st=2024-01-15T17:31:39Z&se=2030-01-17T01:31:39Z&spr=https&sv=2022-11-02&sr=b&sig=bdghRUUx8kA9EZ1kaD3m6vkPbJ1B%2FpSkwYwa2WgcuRc%3D
+" height="60" >
+            <h1 class="module_index">Issues</h1>
+        </a>
+    </div>
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjM4YjFmNmQtMjAzOS00YzYzLWE2ZjQtODE1NmViMDYzYTI0IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_rfi_icon.png?sp=r&st=2024-01-15T17:32:53Z&se=2030-01-17T01:32:53Z&spr=https&sv=2022-11-02&sr=b&sig=7Q4rqY5Ph8KN%2FnbCECK0jkZmPHE4aiwAT8oGi6d5dx8%3D
+" alt="RFIs Button" height="60" >
+            <h1 class="module_index">RFIs</h1>
+        </a>
+    </div>
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiNGIxM2EyMjAtYTZhYy00MzY2LTk1MzYtOGEzNGIwOWJjNTE1IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_submittals_icon.png?sp=r&st=2024-01-15T17:33:24Z&se=2030-01-17T01:33:24Z&spr=https&sv=2022-11-02&sr=b&sig=jUz5yHuBfKgDHIIFMlgbd527ZNuq59JnBhgQO0iSmbs%3D
+" alt="Submittals Button" height="60" >
+            <h1 class="module_index">Submittals</h1>
+        </a>
+    </div>
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiNzRkOTBhMzUtZmI1MS00NjQ2LTg5YjgtYzM2ZjY4MWFmMmUzIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_forms_icon.png?sp=r&st=2024-01-15T17:31:07Z&se=2030-01-17T01:31:07Z&spr=https&sv=2022-11-02&sr=b&sig=SRoKoQe48WR57wesma%2FtmCSLXEpD%2FkYeahmoYOsSipM%3D
+" alt="Forms Button" height="60" >
+            <h1 class="module_index">QC Inspections</h1>
+        </a>
+    </div>
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZDA0ZGU3YjAtMGNhZS00NmQ1LTkyZjYtMmY1YmUxODI1OTQ2IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_forms_icon.png?sp=r&st=2024-01-15T17:31:07Z&se=2030-01-17T01:31:07Z&spr=https&sv=2022-11-02&sr=b&sig=SRoKoQe48WR57wesma%2FtmCSLXEpD%2FkYeahmoYOsSipM%3D
+" alt="Forms Button" height="60" >
+            <h1 class="module_index">Subcontractor Sign Off Forms</h1>
+        </a>
+    </div>
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiYTRkZDI3YjktMjQyZi00YzY5LWExMjAtNWU0NGNlN2EyMWExIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_forms_icon.png?sp=r&st=2024-01-15T17:31:07Z&se=2030-01-17T01:31:07Z&spr=https&sv=2022-11-02&sr=b&sig=SRoKoQe48WR57wesma%2FtmCSLXEpD%2FkYeahmoYOsSipM%3D
+" alt="Forms Button" height="60" >
+            <h1 class="module_index">PDI Report</h1>
+        </a>
+    </div>
+
+    <div class="report_buttons">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZDkxZDczODAtMTExNi00ZTZkLWI4N2YtMmQwNDcyMzBkOTBiIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9">
+            <img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/acc_reviews_icon.png?sp=r&st=2024-01-15T17:32:14Z&se=2030-01-17T01:32:14Z&spr=https&sv=2022-11-02&sr=b&sig=g6DU0CStkRdFHof0ij%2B%2Frdr5OFruSFaI3oJeAZU3dOc%3D
+" alt="Reviews Button" height="60" >
+            <h1 class="module_index">Reviews</h1>
+        </a>
+    </div>
+
+
+<div class="image-container">
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiMjdkY2I3ODctMWFiNy00ODQ5LWIwM2MtODg3YjA0NjU1NjdiIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_backhoe_loader.png?sp=r&st=2024-01-23T20:11:03Z&se=2024-01-31T04:11:03Z&spr=https&sv=2022-11-02&sr=b&sig=yjtgak0H95VA6ol8u71SNUa%2Fljwix4f1q1aM3YNJfxo%3D"
+ alt="machinery_backhoe_loader"></a></div>
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiNzE1YWE2NGQtNTc5Ny00YWFhLTk2NzQtY2M4ZGVkMzM0NjM5IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_buldozer.png?sp=r&st=2024-01-24T20:12:09Z&se=2024-01-31T04:12:09Z&spr=https&sv=2022-11-02&sr=b&sig=LpDJc5AXGtJdLPMLj1tZDAutsXWq%2FkesvOxkv6VQuMw%3D
+" alt="machinery_buldozer"></a></div>
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiMmYwMWE2ZWUtYWU5ZS00N2ZmLTkxMmItN2QxZWM0ZTFjMzY1IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_excavator.png?sp=r&st=2024-01-24T20:12:31Z&se=2024-01-31T04:12:31Z&spr=https&sv=2022-11-02&sr=b&sig=ie0u2oyVB%2BzWvEFGGCUWNb74F8xh6fvH8CY%2BEhaUlwo%3D
+" alt="machinery_excavator"></a></div>
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiZDliZmQxNWItNmM5My00ZDIyLTlmYjUtYTc2ZGQ2MGExZDg0IiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_forklift_zoom_boom.png?sp=r&st=2024-01-24T20:12:55Z&se=2024-01-31T04:12:55Z&spr=https&sv=2022-11-02&sr=b&sig=2Ns4LjW8ntCxvSSwSDFYWs7UfZPmdDcQ3Pp3mI9LjMw%3D
+" alt="machinery_forklift_zoom_boom"></a></div>
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiYjNkNzc3ODUtMmZkMy00YmIwLTk5MDUtY2E4Y2IxNmY3NTgyIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_mini_excavator.png?sp=r&st=2024-01-24T20:13:18Z&se=2024-01-31T04:13:18Z&spr=https&sv=2022-11-02&sr=b&sig=QcE5EAWUDxVFdB2TvVu9mJjKZ4DmaSsSwTB7EsN3UzQ%3D
+" alt="machinery_mini_excavator"></a></div>
+
+<div class="image-item">
+<a href="https://app.powerbi.com/view?r=eyJrIjoiNjVkZDg0N2YtNjc3My00OGI1LTgyMDUtZjgxYTY3Y2ZkYjgwIiwidCI6Ijg0MWZjZmJkLTU3ZTYtNGU1Mi1iYWVmLWMyYTU2YzAyY2NkNSJ9" target="_blank">
+<img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/machinery_skid_steer.png?sp=r&st=2024-01-26T14:12:08Z&se=2030-01-26T22:12:08Z&spr=https&sv=2022-11-02&sr=b&sig=ZOH7gJ0vd%2B5UtgNfM7ULxRe5zC%2FTyhgGAABbOAo26Dk%3D
+" alt="machinery_skid_steer"></a></div>
+
+</div>
+
+        <div class="header34"><h1 class="main_textt", id="the_bottom_text"> "*" </h1></div>
+
+
+<div>
+    <p class="bottom-text">Prica Group Construction Management Inc</p>
+</div>
+
+</body>
+
+</html>
