@@ -199,7 +199,7 @@ height: 38px;
         flex-wrap: wrap;
         justify-content: space-around;
 <!--        background-color: rgb(224, 224, 224); /* Gray background color */-->
-        padding: 60px; /* Add padding for spacing */
+        padding: 0px; /* Add padding for spacing */
         }
 
         .image-item {
@@ -215,7 +215,7 @@ height: 38px;
         }
 
         .image-item img {
-        max-height: 100px;
+        max-height: 120px;
         width: auto;
         height: auto;
         display: block; /* Remove extra space beneath the image */
@@ -228,6 +228,10 @@ height: 38px;
 
 /* For screens larger than 768px (medium and larger) */
 @media (min-width: 769px) {
+    .image-container {
+        justify-content: space-around;
+    }
+
     .image-item {
         flex: 0 0 calc(20% - 20px); /* Five items in a row for larger screens */
     }
@@ -235,17 +239,30 @@ height: 38px;
 
 /* For screens between 200px and 768px (small to medium screens) */
 @media (max-width: 768px) {
+    .image-container {
+        justify-content: center;
+    }
+
     .image-item {
-        flex: 0 0 calc(50% - 20px); /* Two items in a row for medium-sized screens */
+        flex: 0 0 calc(100% - 20px); /* Two items in a row for medium-sized screens */
     }
 }
 
 /* For screens up to 200px (small screens) */
 @media (max-width: 200px) {
+    .image-container {
+        justify-content: center;
+    }
+
     .image-item {
         flex: 0 0 calc(100% - 20px); /* One item in a row for small screens */
     }
 }
+
+.image-item:hover {
+    filter: brightness(1.2); /* Adjust brightness on hover to highlight */
+}
+
 
 <!--######  FLEXING  ######   ######  FLEXING  ######   ######  FLEXING  ######   ######  FLEXING  ######   -->
 
