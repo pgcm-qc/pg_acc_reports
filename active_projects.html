@@ -30,8 +30,12 @@
         .top_header {
             display: flex;
             justify-content: space-between;
-            padding: 10px;
             background-color: rgb(197, 197, 197);
+            padding: 10px; /* Add padding for spacing */
+<!--            margin-left: 20px; /* Set left margin */-->
+<!--            margin-right: 20px; /* Set right margin */-->
+
+
         }
 
         #top_text{font-size: 14px; font-family: './fonts_and_common_media/Artifakt Element Bold'; color: #949393;}
@@ -197,13 +201,15 @@ height: 38px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-<!--        background-color: rgb(224, 224, 224); /* Gray background color */-->
         padding: 10px; /* Add padding for spacing */
+        margin-left: 20px; /* Set left margin */
+        margin-right: 20px; /* Set right margin */
+<!--        background-color: rgb(224, 224, 224); /* Gray background color */-->
         }
 
         .image-item {
         flex: 0 0 calc(33.33% - 20px); /* Adjust the width and spacing as needed */
-        min-width: 400px; /* Set the minimum width */
+        min-width: 350px; /* Set the minimum width */
         margin: 10px;
         width: auto;
         box-sizing: border-box;
@@ -277,7 +283,7 @@ height: 38px;
 }
 
 /* For screens up to 200px (small screens) */
-@media (max-width: 400px) {
+@media (max-width: 380px) {
     .image-container {
         justify-content: center;
     }
@@ -311,9 +317,11 @@ height: 38px;
 <body>
 
 <div class="top_header">
+
 <a class="memorandum_application"><img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/app_pgcm_logo.png?sp=r&st=2024-01-15T17:33:57Z&se=2030-01-17T01:33:57Z&spr=https&sv=2022-11-02&sr=b&sig=8wgfsaGmP7nC9GwhO4STh51MCPSCnmFfqz3WQpwNg00%3D" alt="PGCM Logo"></a>
 <h1 id="top_text"> PGCM Field Reports</h1>
 <a class="memorandum_application"><img src="https://pgearchiveit.blob.core.windows.net/pgautomationmedia/app_qr_34_hickory.png?sp=r&st=2024-01-26T14:42:10Z&se=2030-01-26T22:42:10Z&spr=https&sv=2022-11-02&sr=b&sig=sGoR00ybBoW6BQ%2BPf2GI5kDyHKX4BEMWQBBzQk9CmoA%3D" alt="QR Sharing app" style="height: 60px;"></a>
+
 </div>
 
 <!--<div class="main_header">-->
