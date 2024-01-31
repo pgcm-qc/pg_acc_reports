@@ -193,17 +193,17 @@ height: 38px;
             box-sizing: border-box;
         }
 
-
         .image-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
 <!--        background-color: rgb(224, 224, 224); /* Gray background color */-->
-        padding: 60px; /* Add padding for spacing */
+        padding: 0px; /* Add padding for spacing */
         }
 
         .image-item {
-        flex: 0 0 calc(16.666% - 20px); /* Adjust the width and spacing as needed */
+        flex: 0 0 calc(33.33% - 20px); /* Adjust the width and spacing as needed */
+        min-width: 440px; /* Set the minimum width */
         margin: 10px;
         box-sizing: border-box;
         background-color: rgb(224, 224, 224); /* Background color for the image holder */
@@ -215,40 +215,12 @@ height: 38px;
         }
 
         .image-item img {
-        max-height: 100px;
+        max-height: 140px;
         width: auto;
         height: auto;
         display: block; /* Remove extra space beneath the image */
         margin: auto; /* Center the image horizontally */
         }
-
-
-<!--######  FLEXING  ######   ######  FLEXING  ######   ######  FLEXING  ######   ######  FLEXING  ######   -->
-
-
-/* For screens larger than 768px (medium and larger) */
-@media (min-width: 769px) {
-    .image-item {
-        flex: 0 0 calc(20% - 20px); /* Five items in a row for larger screens */
-    }
-}
-
-/* For screens between 200px and 768px (small to medium screens) */
-@media (max-width: 768px) {
-    .image-item {
-        flex: 0 0 calc(50% - 20px); /* Two items in a row for medium-sized screens */
-    }
-}
-
-/* For screens up to 200px (small screens) */
-@media (max-width: 200px) {
-    .image-item {
-        flex: 0 0 calc(100% - 20px); /* One item in a row for small screens */
-    }
-}
-
-<!--######  FLEXING  ######   ######  FLEXING  ######   ######  FLEXING  ######   ######  FLEXING  ######   -->
-
 
     .image-item:hover {
       filter: brightness(1.2); /* Adjust brightness on hover to highlight */
@@ -276,6 +248,51 @@ height: 38px;
     padding: 0;
     z-index: 2; /* Set a lower z-index to keep the text below the image */
 }
+
+
+<!--######  FLEXING  ######   ######  FLEXING  ######   ######  FLEXING  ######   ######  FLEXING  ######   -->
+
+
+/* For screens larger than 768px (medium and larger) */
+@media (min-width: 769px) {
+    .image-container {
+        justify-content: space-around;
+    }
+
+    .image-item {
+        flex: 0 0 calc(33.33% - 20px); /* Five items in a row for larger screens */
+    }
+}
+
+/* For screens between 200px and 768px (small to medium screens) */
+@media (max-width: 768px) {
+    .image-container {
+        justify-content: center;
+    }
+
+    .image-item {
+        flex: 0 0 calc(50% - 20px); /* Two items in a row for medium-sized screens */
+    }
+}
+
+/* For screens up to 200px (small screens) */
+@media (max-width: 400px) {
+    .image-container {
+        justify-content: center;
+    }
+
+    .image-item {
+        flex: 0 0 calc(100% - 20px); /* One item in a row for small screens */
+    }
+}
+
+.image-item:hover {
+    filter: brightness(1.2); /* Adjust brightness on hover to highlight */
+}
+
+
+<!--######  FLEXING  ######   ######  FLEXING  ######   ######  FLEXING  ######   ######  FLEXING  ######   -->
+
 
 <!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
 <!--     #####  CCs #####  #####  CCs #####  #####  CCs #####  #####  CCs #####-->
